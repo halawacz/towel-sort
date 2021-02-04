@@ -7,12 +7,12 @@ module.exports = function towelSort(matrix = []) {
     let result = [];
     for (const [index, element] of iterator) {
         if (index % 2 == 0) {
-            for (e in element) {
+            for (const e in element) {
                 result.push(matrix[index][e]);
             }
         } else {
             matrix[index].reverse();
-            for (e in element) {
+            for (const e in element) {
                 result.push(matrix[index][e]);
             }
         }
